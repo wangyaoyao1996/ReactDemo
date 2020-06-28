@@ -1,0 +1,32 @@
+.box{
+    width: 100%;
+    background-color: #8a8adb;
+    margin: 0 auto;
+}
+.list,.form{
+    width: 90%;
+    margin: 20px auto;
+}
+.list>div{
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    margin: 50px auto;
+}
+.list>div p{
+    text-align: left;
+    color: gray;
+    font-size: 14px;
+    margin: 0 auto;
+}
+#txtContent{
+    width: 90%;
+}
+.form>button{
+    width: 20%;
+    background-color: cadetblue;
+    color: white;
+    height: 50px;
+    border: none;
+}
+
