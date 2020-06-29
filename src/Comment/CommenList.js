@@ -3,8 +3,8 @@ import Comment from './Comment'
 
 class CommentList extends React.Component {
     render() {
-        console.log(this.props.list)
-        let commentList=this.props.list.map(function (item,index) {
+        // map返回的是一个数组
+        let commentArr=this.props.data.map(function(item,index) {
             // 方法一
             // return <Comment key={index} name={item.name} date={item.date}>
             //     {item.content}
@@ -13,13 +13,12 @@ class CommentList extends React.Component {
             // 解构赋值
             let {name,date,content} =item
             return <Comment key={index} name={name} date={date}>
-                {/*标签里面是children*/}
                 {content}
                 </Comment>
         })
         return (
             <div className="list">
-                {commentList}
+                {commentArr}
             </div>
         )
     }
