@@ -16,7 +16,7 @@ class CommentForm extends React.Component {
         console.log("打印")
         let name = this.txtName.value
         let content = this.txtContent.value
-        let obj = {"name":name,"date":(new Date()).toLocaleDateString(),"content":content}
+        let obj   = {"name":name,"date":(new Date()).toLocaleDateString(),"content":content}
         this.props.onAddComment(obj)
     }
     render() {
